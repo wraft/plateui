@@ -1,0 +1,53 @@
+{
+  "name": "@plateui/toolkit",
+  "description": "Tooling set for functionary applications",
+  "version": "0.2.2",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "functionary-toolkit": "bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "sideEffects": false,
+  "keywords": [
+    "build",
+    "test",
+    "tools"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Wraft Inc",
+    "email": "hello@wraft.co",
+    "url": "https://www.wraft.co/"
+  },
+  "homepage": "https://github.com/wraft/plate/packages/toolkit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wraft/plate.git",
+    "directory": "packages/toolkit"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "cli": "wraft-toolkit",
+    "build": "yarn run build:package && yarn run build:cli",
+    "build:package": "microbundle --no-compress --tsconfig tsconfig.build.json",
+    "build:cli": "microbundle -i src/cli.ts -o dist/cli.js -f cjs --no-pkg-main --no-compress --tsconfig tsconfig.build.json",
+    "dev": "microbundle --no-compress --tsconfig tsconfig.build.json --watch",
+    "lint": "eslint \"{src,tests}/**/*.{ts,tsx,js,jsx}\"",
+    "lint:fix": "eslint \"{src,tests}/**/*.{ts,tsx,js,jsx}\" --fix",
+    "prebuild": "rimraf ./dist/*",
+    "test": "jest --coverage"
+  },
+  "dependencies": {
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "@types/yargs": "^16.0.0"
+  }
+}
