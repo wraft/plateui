@@ -11,14 +11,16 @@ interface AvatarFrameProps {
   image?: string;
 }
 
-const AvatarFrame = ({ image, id, name }: AvatarFrameProps) => {
-  return (
+// const AvatarFrame = ({ image, id, name }: AvatarFrameProps) => {
+
+const AvatarFrame: ForwardRef<HTMLParagraphElement, AvatarFrameProps> = React.forwardRef(
+  (props, ref) => (
     <Box
-      key={id}
+      key={props?.id}
       sx={{
         width: '25%',
         bg: 'primary',
-        backgroundImage: `url(${image})`,
+        backgroundImage: `url(${props?.image})`,
         backgroundSize: 'cover',
         minHeight: '180px',
         borderRadius: '0.5rem',
@@ -58,17 +60,15 @@ const AvatarFrame = ({ image, id, name }: AvatarFrameProps) => {
           }}
           color="white"
         >
-          {name}
+          {props?.name}
         </Text>
       </Box>
     </Box>
-  );
-};
+  ),
+);
 
 const Avatar: ForwardRef<HTMLParagraphElement, AvatarProps> = React.forwardRef((props, ref) => (
-  <Box {...props} ref={ref}>
-    <AvatarFrame {...props}/>
-  </Box>
+  <AvatarFrame {...props} ref={ref} />
 ));
 
 Avatar.displayName = 'Avatar';
