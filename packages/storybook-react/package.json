@@ -1,7 +1,7 @@
 {
   "name": "@plateui/storybook-react",
   "description": "Storybook documentation for @functionary react packages",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "src/storybook.js",
   "files": [
     "build"

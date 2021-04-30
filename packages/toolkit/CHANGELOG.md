@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/wraft/plate/compare/@plateui/toolkit@0.2.3...@plateui/toolkit@0.2.1) (2021-04-30)
+
+**Note:** Version bump only for package @plateui/toolkit
+
+
+
+
+
 ## 0.2.3 (2021-04-30)
 
 **Note:** Version bump only for package @plateui/toolkit

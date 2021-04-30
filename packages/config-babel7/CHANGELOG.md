@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/wraft/plate/compare/@plateui/config-babel7@0.1.2...@plateui/config-babel7@0.2.1) (2021-04-30)
+
+**Note:** Version bump only for package @plateui/config-babel7
+
+
+
+
+
 ## 0.1.2 (2021-04-30)
 
 **Note:** Version bump only for package @plateui/config-babel7
