@@ -1,7 +1,7 @@
 {
   "name": "@plateui/config-babel7",
   "description": "Centralized configuration for babel v7",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,7 +19,7 @@
     "name": "Wraft Inc",
     "email": "hey@wraft.co",
     "url": "https://www.wraft.co/"
-  },  
+  },
   "homepage": "https://github.com/wraft/plate/packages/config-babel7",
   "repository": {
     "type": "git",
