@@ -25,10 +25,10 @@
     "email": "hello@wraft.co",
     "url": "https://www.wraft.co/"
   },
-  "homepage": "https://github.com/wraft/plate/packages/ui-react",
+  "homepage": "https://github.com/wraft/plateui/packages/ui-react",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wraft/plate.git",
+    "url": "https://github.com/wraft/plateui.git",
     "directory": "packages/ui-react"
   },
   "publishConfig": {
