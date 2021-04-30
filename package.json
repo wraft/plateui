@@ -8,10 +8,10 @@
     "email": "hello@wraft.co",
     "url": "https://www.wraft.co/"
   },
-  "homepage": "https://github.com/wraft/plate",
+  "homepage": "https://github.com/wraft/plateui",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wraft/plate.git"
+    "url": "https://github.com/wraft/plateui.git"
   },
   "scripts": {
     "audit:all": "yarn audit && lerna exec --stream 'yarn audit'",
