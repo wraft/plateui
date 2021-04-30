@@ -1,4 +1,4 @@
-# `@functionary/toolkit`
+# `@plateui/toolkit`
 
 Tooling set for functionary applications
 
@@ -8,20 +8,20 @@ Install as a dependency
 
 ```bash
 # if you use yarn
-yarn add -D @functionary/toolkit
+yarn add -D @plateui/toolkit
 # or if you use npm
-npm i --save-dev @functionary/toolkit
+npm i --save-dev @plateui/toolkit
 ```
 
 ### CLI
 
-A binary executable can be invoked as an npm script: `functionary-toolkit`.
+A binary executable can be invoked as an npm script: `plateui-toolkit`.
 
 #### create-dotenv-file
 
 Create a local `.env` file based on an example file
 
-`functionary-toolkit create-dotenv-file --example .env.example`
+`plateui-toolkit create-dotenv-file --example .env.example`
 
 ### Exports
 
@@ -29,7 +29,7 @@ This package also provides some centralised default configurations for e.g. webp
 
 ```js
 // webpack.config.babel.js
-import { getWebpack4Configuration } from '@functionary/toolkit';
+import { getWebpack4Configuration } from '@plateui/toolkit';
 
 export default getWebpack4Configuration(
   'production', // or 'development'

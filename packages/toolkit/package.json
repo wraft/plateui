@@ -24,10 +24,10 @@
     "email": "hello@wraft.co",
     "url": "https://www.wraft.co/"
   },
-  "homepage": "https://github.com/wraft/plate/packages/toolkit",
+  "homepage": "https://github.com/wraft/plateui/packages/toolkit",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wraft/plate.git",
+    "url": "https://github.com/wraft/plateui.git",
     "directory": "packages/toolkit"
   },
   "publishConfig": {
