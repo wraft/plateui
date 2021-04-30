@@ -1,7 +1,7 @@
 {
   "name": "@plateui/ui-react",
   "description": "Functionary white-label UI components extending the amazing theme-ui library",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
