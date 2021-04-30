@@ -18,7 +18,7 @@ const AvatarFrame: ForwardRef<HTMLParagraphElement, AvatarFrameProps> = React.fo
     <Box
       key={props?.id}
       sx={{
-        width: '25%',
+        width: '100%',
         bg: 'primary',
         backgroundImage: `url(${props?.image})`,
         backgroundSize: 'cover',
@@ -32,7 +32,6 @@ const AvatarFrame: ForwardRef<HTMLParagraphElement, AvatarFrameProps> = React.fo
         position: 'relative',
         m: 1,
         mb: 3,
-        mr: 3,
         ml: 0,
       }}
     >
