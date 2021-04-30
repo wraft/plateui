@@ -1,7 +1,7 @@
 {
   "name": "@plateui/ts-react-example",
   "description": "TypeScript & React example using @plateui/ui-react",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "author": {
     "name": "Wraft Inc",
