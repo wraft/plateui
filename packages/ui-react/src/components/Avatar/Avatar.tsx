@@ -8,7 +8,7 @@ export type AvatarProps = Assign<React.ComponentPropsWithRef<'p'>, BoxProps>;
 interface AvatarFrameProps {
   id?: string;
   name?: string;
-  image: string;
+  image?: string;
 }
 
 const AvatarFrame = ({ image, id, name }: AvatarFrameProps) => {
@@ -16,28 +16,49 @@ const AvatarFrame = ({ image, id, name }: AvatarFrameProps) => {
     <Box
       key={id}
       sx={{
-        width: '23%',
-        border: 'solid 1px #000',
+        width: '25%',
+        bg: 'primary',
         backgroundImage: `url(${image})`,
         backgroundSize: 'cover',
-        minHeight: '200px',
+        minHeight: '180px',
         borderRadius: '0.5rem',
-        m: 2,
+        opacity: 0.9,
+        ':hover': {
+          opacity: 1,
+        },
+        overflow: 'hidden',
+        position: 'relative',
+        m: 1,
+        mb: 3,
+        mr: 3,
         ml: 0,
       }}
     >
       <Box
+        as="span"
         sx={{
-          p: 3,
-          height: '100%',
-          backgroundImage: 'linear-gradient(45deg, black, transparent)',
+          display: 'block',
+          pl: 3,
+          textDecoration: 'none',
+          pt: 3,
         }}
       >
-        <Text sx={{ fontSize: 4, fontWeight: 100, pl: 2, pt: 2 }} color="white">
+        <Text
+          sx={{
+            position: 'absolute',
+            bottom: 0,
+            pb: 3,
+            backgroundImage: 'linear-gradient(360deg, #000000bf, transparent)',
+            left: 0,
+            right: 0,
+            fontSize: 4,
+            fontWeight: 100,
+            pl: 4,
+            pt: 2,
+          }}
+          color="white"
+        >
           {name}
-        </Text>
-        <Text sx={{ fontSize: 1, fontWeight: 100, pl: 2, pt: 2, opacity: 0.4 }} color="white">
-          20
         </Text>
       </Box>
     </Box>
@@ -46,7 +67,7 @@ const AvatarFrame = ({ image, id, name }: AvatarFrameProps) => {
 
 const Avatar: ForwardRef<HTMLParagraphElement, AvatarProps> = React.forwardRef((props, ref) => (
   <Box {...props} ref={ref}>
-    <AvatarFrame image="https://picsum.photos/100" id="01" name="Name" />
+    <AvatarFrame {...props}/>
   </Box>
 ));
 
