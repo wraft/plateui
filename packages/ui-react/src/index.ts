@@ -6,5 +6,6 @@ import Paragraph from './components/Paragraph';
 import Avatar from './components/Avatar';
 import Field from './components/Field';
 import FieldDate from './components/FieldDate';
+import Table from './components/Table';
 
-export { PartialTheme, Paragraph, Avatar, Field, FieldDate };
+export { PartialTheme, Paragraph, Avatar, Field, FieldDate, Table };
