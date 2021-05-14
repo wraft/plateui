@@ -4,9 +4,9 @@ import { Text, Box, Label, Input } from 'theme-ui';
 // import { Input } from "@chakra-ui/core";
 
 interface Props {
-  register: any;
-  label: string;
-  name: string;
+  register?: any;
+  label?: string;
+  name?: string;
   defaultValue?: string;
   mr?: number;
   placeholder?: string;
