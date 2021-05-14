@@ -31,10 +31,6 @@ const TableWrap = () => {
   )
 }
 
-TableWrap.defaultProps = {
-  // plugins: [],
-};
-
-TableWrap.displayName = 'Table';
+// TableWrap.displayName = 'Table';
 
 export default TableWrap;
