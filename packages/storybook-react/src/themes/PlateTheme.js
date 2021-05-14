@@ -89,4 +89,4 @@ const PlateTheme = merge(preset, {
   },
 });
 
-export default FunctionaryTheme;
+export default PlateTheme;
