@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.19](https://github.com/wraft/plate/compare/@plateui/ts-react-example@0.1.18...@plateui/ts-react-example@0.1.19) (2021-05-14)
+
+**Note:** Version bump only for package @plateui/ts-react-example
+
+
+
+
+
 ## [0.1.18](https://github.com/wraft/plate/compare/@plateui/ts-react-example@0.1.17...@plateui/ts-react-example@0.1.18) (2021-05-14)
 
 **Note:** Version bump only for package @plateui/ts-react-example

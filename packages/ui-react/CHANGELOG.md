@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.19](https://github.com/wraft/plateui/compare/@plateui/ui-react@0.2.18...@plateui/ui-react@0.2.19) (2021-05-14)
+
+**Note:** Version bump only for package @plateui/ui-react
+
+
+
+
+
 ## [0.2.18](https://github.com/wraft/plateui/compare/@plateui/ui-react@0.2.17...@plateui/ui-react@0.2.18) (2021-05-14)
 
 **Note:** Version bump only for package @plateui/ui-react
