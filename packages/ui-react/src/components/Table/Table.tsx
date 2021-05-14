@@ -1,6 +1,6 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
-import React, { FC } from 'react';
+import React from 'react';
 import { jsx, ThemeUIStyleObject, Text } from 'theme-ui';
 import { PluginHook, useTable, UseTableOptions } from 'react-table';
 export * from 'react-table';
@@ -25,60 +25,16 @@ export interface TableProps {
   plugins?: PluginHook<{}>[];
 }
 
-const XTable = ({ options, plugins }: TableProps) => {
-  const tableInstance = useTable(options, ...(plugins || []));
-
-  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = tableInstance;
-
-  return (
-    <table {...getTableProps()} sx={styles.table}>
-      <thead sx={styles.thead}>
-        {headerGroups.map((headerGroup) => (
-          <tr {...headerGroup.getHeaderGroupProps()}>
-            {headerGroup.headers.map((column) => {
-              const thSx = {
-                ...styles.th,
-                width: column.width,
-                minWidth: column.minWidth,
-                maxWidth: column.maxWidth,
-              } as ThemeUIStyleObject;
-              return (
-                <th {...column.getHeaderProps()} sx={thSx}>
-                  {column.render('Header')}
-                </th>
-              );
-            })}
-          </tr>
-        ))}
-      </thead>
-      <tbody {...getTableBodyProps()}>
-        {rows.map((row) => {
-          prepareRow(row);
-          return (
-            <tr {...row.getRowProps()} sx={styles.tr}>
-              {row.cells.map((cell) => (
-                <td {...cell.getCellProps()} sx={styles.td}>
-                  {cell.render('Cell')}
-                </td>
-              ))}
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
-  );
-};
-
-const Table = () => {
+const TableWrap = () => {
   return(
-    <Text>Hello</Text>
+    <Text>Table</Text>
   )
 }
 
-Table.defaultProps = {
-  plugins: [],
+TableWrap.defaultProps = {
+  // plugins: [],
 };
 
-Table.displayName = 'Table';
+TableWrap.displayName = 'Table';
 
-export default Table;
+export default TableWrap;

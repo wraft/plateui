@@ -35,7 +35,7 @@ describe('components > Table', () => {
   it('renders as expected', () => {
     const content =
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
-    const { container } = renderWithTheme(<Table options={TableSample}>{content}</Table>);
+    const { container } = renderWithTheme(<Table/>);
   });
 
 });
