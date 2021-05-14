@@ -77,13 +77,13 @@ export const Table: React.FC<TableProps> = ({ options, plugins }) => {
         {rows.map((row) => {
           prepareRow(row);
           return (
-            <tr {...row.getRowProps()} sx={styles.tr}>
+            <Box as="tr" {...row.getRowProps()} sx={styles.tr}>
               {row.cells.map((cell) => (
-                <td {...cell.getCellProps()} sx={styles.td}>
+                <Box as="th" {...cell.getCellProps()} sx={styles.td}>
                   {cell.render('Cell')}
-                </td>
+                </Box>
               ))}
-            </tr>
+            </Box>
           );
         })}
       </Box>
@@ -94,3 +94,5 @@ export const Table: React.FC<TableProps> = ({ options, plugins }) => {
 Table.defaultProps = {
   plugins: [],
 };
+
+export default Table;
