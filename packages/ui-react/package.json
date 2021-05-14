@@ -53,5 +53,6 @@
     "react-day-picker": "^7.4.10",
     "react-table": "^7.7.0",
     "styled-icons": "^10.33.0"
-  }
+  },
+  "gitHead": "b563d71beceb102369b9478b5c0a69d7e9ef63bb"
 }
