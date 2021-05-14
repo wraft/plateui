@@ -1,4 +1,3 @@
-/* eslint react/jsx-key: 0 */
 import React from 'react';
 import { jsx, ThemeUIStyleObject, Box } from 'theme-ui';
 import { PluginHook, useTable, UseTableOptions } from 'react-table';
@@ -42,7 +41,7 @@ export interface TableProps {
 }
 
 // eslint-disable-next-line react/prop-types
-const Table: React.FunctionComponent<TableProps> = ({ options, plugins }: TableProps) => {
+const Tablex: React.FunctionComponent<TableProps> = ({ options, plugins }: TableProps) => {
   const tableInstance = useTable(options, ...(plugins || []));
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = tableInstance;
 
@@ -85,8 +84,4 @@ const Table: React.FunctionComponent<TableProps> = ({ options, plugins }: TableP
   );
 };
 
-Table.defaultProps = {
-  plugins: [],
-};
-
-export default Table;
+export default Tablex;

@@ -1,0 +1,49 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
+import { select, text } from '@storybook/addon-knobs';
+import { Badge, useThemeUI } from 'theme-ui';
+
+import { Table } from '@plateui/ui-react';
+
+# Table
+
+simple generic table
+
+<Meta
+  title="UI Components / Content / Table"
+  component={Table}
+  parameters={{ layout: 'centered' }}
+/>
+
+You can define variants in your theme under `theme.badges`, default variant is `primary`
+
+<Preview>
+  <Story name="Default">
+    {() => {
+      const { theme } = useThemeUI();
+      return (
+        <Table
+          options={{
+            columns: [
+              {
+                Header: 'Id',
+                accessor: 'col1', // accessor is the "key" in the data
+                width: '15%',
+              },
+              {
+                Header: 'Name',
+                accessor: 'col2',
+                width: '45%',
+              },
+              {
+                Header: 'Updated',
+                accessor: 'col3',
+                width: '40%',
+              },
+            ],
+            data: [],
+          }}
+        ></Table>
+      );
+    }}
+  </Story>
+</Preview>
