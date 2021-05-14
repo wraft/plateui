@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.13](https://github.com/wraft/plate/compare/@plateui/storybook-react@0.2.12...@plateui/storybook-react@0.2.13) (2021-05-14)
+
+**Note:** Version bump only for package @plateui/storybook-react
+
+
+
+
+
 ## [0.2.12](https://github.com/wraft/plate/compare/@plateui/storybook-react@0.2.11...@plateui/storybook-react@0.2.12) (2021-04-30)
 
 **Note:** Version bump only for package @plateui/storybook-react
