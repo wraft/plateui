@@ -1,7 +1,7 @@
 /** @jsx jsx */
 /* eslint react/jsx-key: 0 */
 import React from 'react';
-import { jsx, ThemeUIStyleObject } from 'theme-ui';
+import { jsx, ThemeUIStyleObject, Box } from 'theme-ui';
 import { PluginHook, useTable, UseTableOptions } from 'react-table';
 export * from 'react-table';
 
@@ -19,7 +19,7 @@ const styles = {
     border: '1px solid',
     borderColor: 'gray.3',
     color: 'gray.6',
-  },
+  } as ThemeUIStyleObject,
   tr: {
     verticalAlign: 'top',
     bg: 'gray.0',
@@ -53,10 +53,10 @@ export const Table: React.FC<TableProps> = ({ options, plugins }) => {
   } = tableInstance;
 
   return (
-    <table {...getTableProps()} sx={styles.table}>
-      <thead sx={styles.thead}>
+    <Box as="table" {...getTableProps()} sx={styles.table}>
+      <Box as="thead" sx={styles.thead}>
         {headerGroups.map((headerGroup) => (
-          <tr {...headerGroup.getHeaderGroupProps()}>
+          <Box as="tr" {...headerGroup.getHeaderGroupProps()}>
             {headerGroup.headers.map((column) => {
               const thSx = {
                 ...styles.th,
@@ -65,15 +65,15 @@ export const Table: React.FC<TableProps> = ({ options, plugins }) => {
                 maxWidth: column.maxWidth,
               } as ThemeUIStyleObject;
               return (
-                <th {...column.getHeaderProps()} sx={thSx}>
+                <Box as="th" {...column.getHeaderProps()} sx={thSx}>
                   {column.render('Header')}
-                </th>
+                </Box>
               );
             })}
-          </tr>
+          </Box>
         ))}
-      </thead>
-      <tbody {...getTableBodyProps()}>
+      </Box>
+      <Box as="tbody" {...getTableBodyProps()}>
         {rows.map((row) => {
           prepareRow(row);
           return (
@@ -86,8 +86,8 @@ export const Table: React.FC<TableProps> = ({ options, plugins }) => {
             </tr>
           );
         })}
-      </tbody>
-    </table>
+      </Box>
+    </Box>
   );
 };
 
