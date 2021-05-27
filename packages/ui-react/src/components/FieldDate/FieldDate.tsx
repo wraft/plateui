@@ -1,13 +1,12 @@
-import React, { useEffect, Fragment } from 'react';
-import { Text, Box, Label, Input } from 'theme-ui';
+import React from 'react';
+import { Box, Label, Input } from 'theme-ui';
 
 import { DateUtils } from 'react-day-picker';
+import DayPickerInput from 'react-day-picker/DayPickerInput';
 import dateFnsFormat from 'date-fns/format';
 import dateFnsParse from 'date-fns/parse';
 
-import DayPickerInput from 'react-day-picker/DayPickerInput';
-
-interface Props {
+interface FieldDateProps {
   register: any;
   label: string;
   name: string;
@@ -20,14 +19,10 @@ interface Props {
   selected?: any;
 }
 
-const FieldDate: React.FC<Props> = ({
+const FieldDate: React.FC<FieldDateProps> = ({
   name,
   label,
-  placeholder,
   register,
-  defaultValue,
-  mr,
-  sub,
   required = true,
   onChangeDate,
   selected,
@@ -48,11 +43,6 @@ const FieldDate: React.FC<Props> = ({
 
   return (
     <Box pb={2} sx={{ position: 'relative', width: '100%' }}>
-      {sub && (
-        <Text color="#444" sx={{ position: 'absolute', right: 1, top: 40 }}>
-          {/* <Calendar width="20" /> */}
-        </Text>
-      )}
       <Label htmlFor="description" mb={0}>
         {label}
       </Label>
@@ -63,9 +53,7 @@ const FieldDate: React.FC<Props> = ({
         onDayChange={onChangeDate}
         value={selected}
         hideOnDayClick={true}
-        component={(_props: any) => (
-          <Input name={name} sx={{ bg: 'white' }} ref={register({ required })} {..._props} />
-        )}
+        component={(p: any) => <Input name={name} ref={register({ required })} {...p} />}
       />
     </Box>
   );
