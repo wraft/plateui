@@ -5,7 +5,8 @@
     "forceConsistentCasingInFileNames": true,
     // https://www.typescriptlang.org/docs/handbook/module-resolution.html#node
     "moduleResolution": "node",
-    "strict": true
+    "strict": true,
+    "jsx": "preserve"
   },
   "exclude": ["node_modules"]
 }
