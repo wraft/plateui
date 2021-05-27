@@ -15,7 +15,6 @@
     // "jsx": "react",
     "noEmit": true,
     "module": "es2015",
-    "isolatedModules": true
   },
   "exclude": ["node_modules"]
 }
