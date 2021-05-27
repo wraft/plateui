@@ -48,12 +48,14 @@
     "react-dom": ">=16.8.0 <16.14",
     "theme-ui": "^0.4.0-rc.14"
   },
-  "dependencies": {
-    "@types/react-table": "^7.7.0",
+  "dependencies": {    
     "date-fns": "^2.21.1",
     "react-day-picker": "^7.4.10",
     "react-table": "^7.7.0",
     "styled-icons": "^10.33.0"
+  },
+  "devDependencies": {
+    "@types/react-table": "^7.7.0"
   },
   "gitHead": "f53c6af855349462953bfd65d6b114358b1d84d0"
 }

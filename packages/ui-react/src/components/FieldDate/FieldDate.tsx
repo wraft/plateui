@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Fragment } from 'react';
 import { Text, Box, Label, Input } from 'theme-ui';
 
 import { DateUtils } from 'react-day-picker';
@@ -64,9 +64,7 @@ const FieldDate: React.FC<Props> = ({
         value={selected}
         hideOnDayClick={true}
         component={(_props: any) => (
-          <>
-            <Input name={name} sx={{ bg: 'white' }} ref={register({ required })} {..._props} />
-          </>
+          <Input name={name} sx={{ bg: 'white' }} ref={register({ required })} {..._props} />
         )}
       />
     </Box>
