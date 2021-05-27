@@ -1,7 +1,7 @@
 {
   "name": "@plateui/storybook-react",
   "description": "Storybook documentation for @functionary react packages",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "main": "src/storybook.js",
   "files": [
     "build"
@@ -33,7 +33,7 @@
     "prebuild": "rimraf ./dist/*"
   },
   "dependencies": {
-    "@plateui/ui-react": "^0.4.1",
+    "@plateui/ui-react": "^0.4.2",
     "@storybook/addon-a11y": "^6.1.0",
     "@storybook/addon-actions": "^6.1.0",
     "@storybook/addon-docs": "^6.1.0",

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://github.com/wraft/plateui/compare/@plateui/ui-react@0.4.1...@plateui/ui-react@0.4.2) (2021-05-27)
+
+### Bug Fixes
+
+- table ([4f4bd9b](https://github.com/wraft/plateui/commit/4f4bd9bbdac3d8c0885890dc576f1320354cb6d9))
+
 ## [0.4.1](https://github.com/wraft/plateui/compare/@plateui/ui-react@0.4.0...@plateui/ui-react@0.4.1) (2021-05-27)
 
 ### Bug Fixes
