@@ -31,7 +31,7 @@
   },
   "scripts": {
     "build": "yarn run build:package",
-    "build:package": "microbundle --no-compress --tsconfig tsconfig.build.json",
+    "build:package": "microbundle --no-compress --jsxFragment React.Fragment --tsconfig tsconfig.build.json",
     "dev": "microbundle --no-compress --tsconfig tsconfig.build.json --watch",
     "lint": "eslint \"{src,tests}/**/*.{ts,tsx,js,jsx}\"",
     "lint:fix": "eslint \"{src,tests}/**/*.{ts,tsx,js,jsx}\" --fix",
